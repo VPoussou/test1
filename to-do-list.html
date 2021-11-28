@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="to-do-list.css">
+</head>
+<body>
+    <h1>
+        To-do list
+    </h1>
+    <div class="menu_conrainer">
+        <section class="menu">
+            <div class="input_container">
+                <label for="tache">Tâche à accomplir</label>
+                <input type="text" id="tache" placeholder="Tâche à accomplir">
+            </div>
+            <div class="input_container">
+                <label for="categorie">Catégorie</label>
+                <select name="catégorie" id="categorie">
+                    <option value="--choisissez une catégorie--">--choisissez une catégorie--</option>
+                    <option value="HETIC">HETIC</option>
+                    <option value="Projet-Reyk">Projet Reyk</option>
+                    <option value="Atelier-Théâtre">Atelier Théâtre</option>
+                    <option value="Maison">Maison</option>
+                </select>
+            </div>
+            <input type="button" name="Ok" id="ok" value="Ok">
+        </section>
+        <div class="addcat">
+            <label for="ajout-categorie">Ajoutez une catégorie</label>
+            <input type="text" name="" id="ajout-categorie">
+            <input type="button" value="Ok" id="ajout-categorie-ok">
+        </div>
+    </div>
+    <div class="span_container">
+        <span> Nombre de tâches actives <span id="tasknb"></span></span>
+        <span>Nombre de tâches terminées <span id="donetasknb"></span></span>
+    </div>
+    <section>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>  Nom de la tâche</th>
+                    <th>  Catégorie</th>
+                    <th>Accomplissement</th>
+                    <th>Supprimer</th>
+   
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="to-do-list.js"></script>
+</body>
+</html>
